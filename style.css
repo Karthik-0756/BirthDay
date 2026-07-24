@@ -14,7 +14,7 @@ body{
 margin:0;
 overflow:hidden;
 color:#fff;
-
+overflow-x: hidden;
 background:#070b17;
 
 font-family:Poppins,sans-serif;
@@ -1098,7 +1098,7 @@ Gift Scene
 display:flex;
 flex-direction:column;
 align-items:center;
-
+   overflow: hidden;
 color:white;
 
 }
