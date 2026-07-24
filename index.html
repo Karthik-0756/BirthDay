@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="bg-ambient"></div>
+    <div class="vignette"></div>
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+    <div class="mesh">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="depth-layer"></div>
+    <div class="particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <div class="mouse-glow"></div>
+
+    <!-- Loading -->
+
+    <section id="loading" class="scene active">
+
+        <div class="loader">
+
+            <div class="loader-ring"></div>
+
+            <div class="heart"></div>
+
+            <div class="loader-glow"></div>
+
+            <h1>Preparing Something Special</h1>
+
+            <p>Please wait a moment...</p>
+
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Intro -->
+
+    <section id="intro" class="scene">
+
+        <div class="glass">
+
+            <div class="glass-light"></div>
+
+            <div class="glass-shine"></div>
+
+            <span class="badge">
+                ✨ Birthday Surprise ✨
+            </span>
+
+            <h3>Hello 👋</h3>
+
+            <h1>Happy Birthday</h1>
+
+            <h2>Komz❤️</h2>
+
+            <p>
+
+                Today isn't just another day.
+
+                It is a celebration of your smile,
+
+                your kindness, and every beautiful
+
+                memory you've created.
+
+            </p>
+
+            <button id="start">
+
+                Begin Journey ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Ready -->
+
+    <section id="ready" class="scene">
+
+        <div class="glass">
+
+            <div class="glass-light"></div>
+
+            <div class="glass-shine"></div>
+
+            <span class="badge">
+
+                ❤️ Ready? ❤️
+
+            </span>
+
+            <h1>Are You Ready?</h1>
+
+            <p>
+
+                The next few moments have been
+
+                specially made for you.
+
+            </p>
+
+            <div class="buttons">
+
+                <button class="yes" id="yesBtn">
+
+                    YES ❤️
+
+                </button>
+
+                <button class="yes secondary"  id="absoluteBtn">
+
+                    ABSOLUTELY ❤️
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cake -->
+
+    <section id="cake" class="scene">
+
+        <div class="cake-container">
+
+            <h1>Make a Wish ✨</h1>
+
+            <p>Click every candle to blow it out.</p>
+
+            <div class="cake">
+
+                <div class="layer layer1"></div>
+                <div class="layer layer2"></div>
+
+                <div class="icing"></div>
+
+                <div class="candles">
+
+                    <div class="candle" data-id="1">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle" data-id="2">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle" data-id="3">
+                        <div class="flame"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section id="gallery" class="scene">
+
+        <div class="gallery-wrapper">
+
+            <h1>Beautiful Memories ❤️</h1>
+
+            <p>Every picture tells a beautiful story.</p>
+
+            <div class="gallery-grid">
+
+                <div class="photo">
+                    <img src="assets/images/photo1.jpeg" alt="">
+                </div>
+
+                <div class="photo">
+                    <img src="assets/images/photo2.jpeg" alt="">
+                </div>
+
+                <div class="photo">
+                    <img src="assets/images/photo3.jpeg" alt="">
+                </div>
+
+                <div class="photo">
+                    <img src="assets/images/photo4.jpeg" alt="">
+                </div>
+
+                <div class="photo">
+                    <img src="assets/images/photo5.jpeg" alt="">
+                </div>
+
+                <div class="photo">
+                    <img src="assets/images/photo6.jpeg" alt="">
+                </div>
+
+            </div>
+
+            <button id="continueBtn">
+
+                Continue ❤️
+
+            </button>
+
+        </div>
+
+        <div id="lightbox">
+
+            <span id="close">&times;</span>
+
+            <img id="lightboxImg">
+
+        </div>
+
+    </section>
+
+    <!-- Letter -->
+
+    <section id="letter" class="scene">
+
+        <div class="letter-container">
+
+            <h1>A Letter For You ❤️</h1>
+
+            <div id="envelope" class="envelope">
+
+                <div class="flap"></div>
+
+                <div class="body"></div>
+
+                <div class="letter-paper">
+
+                    <div id="typedText"></div>
+
+                </div>
+
+            </div>
+
+            <button id="nextGift" style="display:none">
+                Continue 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Gift -->
+
+    <section id="gift" class="scene">
+
+        <div class="gift-container">
+
+            <h1>Your Surprise Gift ❤️</h1>
+
+            <p>Click the gift box to open it.</p>
+
+            <div class="gift-box" id="giftBox">
+
+                <div class="gift-lid"></div>
+
+                <div class="gift-body"></div>
+
+                <div class="gift-ribbon vertical"></div>
+
+                <div class="gift-ribbon horizontal"></div>
+
+            </div>
+
+            <div id="giftMessage">
+
+                <h2>🎉 Surprise! 🎉</h2>
+
+                <p>
+
+                    May your smile always shine brighter than today.
+
+                    Happy Birthday ❤️
+
+                </p>
+
+                <button id="toFinal">
+
+                    Celebrate 🎆
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Final -->
+
+    <section id="final" class="scene">
+
+        <div class="final-wrapper">
+
+            <h2 class="small-text">
+                🎉 Congratulations 🎉
+            </h2>
+
+            <h1 class="birthday-title">
+                Happy Birthday ❤️
+            </h1>
+
+            <p class="wish">
+
+                May your life always be filled with
+                love, happiness, success and endless smiles.
+
+                Enjoy every moment of your special day.
+
+            </p>
+
+            <button id="replay">
+
+                Replay Journey
+
+            </button>
+
+        </div>
+
+        <canvas id="fireworks"></canvas>
+
+        <div id="floatingHearts"></div>
+
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+   
+
+
+    <audio id="bgMusic" loop>
+        <source src="assets/music/music.mp3" type="audio/mpeg">
+    </audio>
+
+     <script src="script.js"></script>
+
+</body>
+
+</html>
