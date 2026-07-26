@@ -1928,3 +1928,64 @@ FINAL SCENE
     }
 
 }
+/* ==========================
+   First Page Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .glass h1{
+
+        font-size:32px;
+        white-space:nowrap;
+        line-height:1.1;
+        letter-spacing:-1px;
+
+    }
+
+}
+/* ==========================
+   Hero Heading Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .glass h2{
+
+        font-size:24px;
+        white-space:nowrap;
+        line-height:1.2;
+
+    }
+
+}
+/* ==========================
+   Make a Wish Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .cake-container h1{
+
+        font-size:32px;
+        white-space:nowrap;
+        line-height:1.2;
+
+    }
+
+}
+/* ==========================
+   Beautiful Memories Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .gallery-wrapper h1{
+
+        font-size:32px;
+        white-space:nowrap;
+        line-height:1.2;
+
+    }
+
+}
